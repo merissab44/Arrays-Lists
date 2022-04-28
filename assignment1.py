@@ -1,7 +1,3 @@
-# Given an array a of n numbers and a target value t, find two numbers whose sum is t
-# add the pairs to an array
-# return the array
-
 def two_sum(a, t):
     # your code here
     pairs = []
