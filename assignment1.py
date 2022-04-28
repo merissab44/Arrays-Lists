@@ -8,6 +8,7 @@ def two_sum(array, target):
 
 print(two_sum([5, 3, 6, 8, 2, 4, 7],10))
 
+# PROBLEM 2
 def two_sum_sorted(numbers, target):
     pairs = []
     i = 0
@@ -24,3 +25,17 @@ def two_sum_sorted(numbers, target):
     return pairs
 
 print(two_sum_sorted([2,7,11,15],9))
+
+# PROBLEM 3
+def largest_values(array, k):
+    largest = []
+    for i in range(k):
+        for j in range(len(array)):
+            if array[j] > array[i]:
+                array[i], array[j] = array[j], array[i]
+        largest.append(array[i])
+        array.remove(array[i])
+    return largest
+
+print(largest_values([5, 1, 3, 6, 8, 2, 4, 7],3))
+
