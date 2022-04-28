@@ -1,10 +1,9 @@
-def two_sum(a, t):
-    # your code here
+def two_sum(array, target):
     pairs = []
-    for i in range(len(a)):
-        for j in range(i+1, len(a)):
-            if a[i] + a[j] == t:
-                pairs.append([a[i], a[j]])
+    for i in range(len(array)):
+        for j in range(i+1, len(array)):
+            if array[i] + array[j] == target:
+                pairs.append([array[i], array[j]])
     return pairs
 
 print(two_sum([5, 3, 6, 8, 2, 4, 7],10))
